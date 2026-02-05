@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Happy Valentine’s Day</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main class="wrap">
+      <section class="card" aria-label="Valentine's card">
+        <h1>Happy Valentine’s Day, <span id="name">my love</span> ❤️</h1>
+        <p class="sub">I know I said I wasn't going to do this but it was a misdirection.</p>
+
+        <div class="envelope-wrap">
+          <div class="envelope" id="envelopeBtn" role="button" tabindex="0" aria-label="Open the letter">
+            <div class="env-shadow"></div>
+
+            <div class="env-back"></div>
+            <div class="env-front"></div>
+
+            <div class="env-flap" aria-hidden="true"></div>
+
+            <div class="letter" id="letter" aria-hidden="true">
+              <div class="letter-top">
+                <div class="no-flash" id="noFlash" aria-live="polite"></div>
+
+                <div class="letter-meta">
+                  <div class="meta-left">
+                    <div class="meta-kicker">To</div>
+                    <div class="meta-name" id="toName">Regan</div>
+                  </div>
+
+                  <div class="meta-right">
+                    <div class="meta-kicker">From</div>
+                    <div class="meta-name">Sam</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="letter-body">
+                <h2>Will you be my Valentine?</h2>
+                <p id="loveMessage">
+                  I love you so so so much. You make every single day better just by existing and I can't wait to see what our future holds together. Will you be my Valentine?
+                </p>
+                <p class="tiny-note">Tap a button (choose wisely)</p>
+
+                <div class="yn-row">
+                  <button class="yes" id="yesBtn" type="button">Yes 💖</button>
+                  <button class="no" id="noBtn" type="button">No</button>
+                </div>
+                <div class="result" id="result" hidden></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="heart-burst-layer" id="heartBurst" aria-hidden="true"></div>
+      <div class="heart-rain" id="heartRain" aria-hidden="true"></div>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
