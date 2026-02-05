@@ -5,20 +5,10 @@ const msg = params.get("msg");
 const nameEl = document.getElementById("name");
 const toName = document.getElementById("toName");
 const loveMessageEl = document.getElementById("loveMessage");
-const dateEl = document.getElementById("date");
 
 if (name && nameEl) nameEl.textContent = name;
 if (name && toName) toName.textContent = name;
 if (msg && loveMessageEl) loveMessageEl.textContent = msg;
-
-if (dateEl) {
-  dateEl.textContent = new Date().toLocaleDateString(undefined, {
-    weekday: "long",
-    year: "numeric",
-    month: "long",
-    day: "numeric"
-  });
-}
 
 const heartsRoot = document.getElementById("heartBurst");
 
